@@ -1,0 +1,25 @@
+# Dependencies
+BACKEND/node_modules/
+FRONTEND/node_modules/
+
+# Environment files
+BACKEND/.env
+FRONTEND/.env
+
+# Build folders
+BACKEND/dist/
+FRONTEND/dist/
+FRONTEND/build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# npm
+npm-debug.log*
