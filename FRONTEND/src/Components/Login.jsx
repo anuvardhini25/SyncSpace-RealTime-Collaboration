@@ -232,12 +232,12 @@ export default function Login() {
                       Remember me
                     </label>
 
-                    <button
-                      type="button"
-                      className="font-semibold text-violet-600 hover:text-violet-700"
-                    >
-                      Forgot password?
-                    </button>
+                    <div className="mt-6 text-center text-sm">
+                      <span className="text-gray-500">Don't have an account? </span>
+                      <Link to="/ForgotPassword" className="font-medium text-indigo-600 hover:text-indigo-500 transition-colors">
+                        ForgotPassword
+                      </Link>
+                    </div>
 
                   </div>
 
