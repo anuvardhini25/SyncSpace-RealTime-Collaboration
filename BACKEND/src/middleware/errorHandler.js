@@ -1,13 +1,20 @@
-export const notFound = (req, res, next) => {
-  res.status(404);
-  next(new Error(`Route not found - ${req.originalUrl}`));
-};
+const errorHandler = (err, req, res, next) => {
+  const statusCode = err.statusCode || res.statusCode || 500;
 
-export const errorHandler = (err, req, res, next) => {
-  const statusCode = res.statusCode && res.statusCode !== 200 ? res.statusCode : 500;
+  console.error("API Error:", {
+    method: req.method,
+    path: req.originalUrl,
+    statusCode,
+    message: err.message,
+  });
+
   res.status(statusCode).json({
     success: false,
-    message: err.message || 'Server error',
-    stack: process.env.NODE_ENV === 'production' ? undefined : err.stack,
+    message:
+      statusCode === 500
+        ? "Internal server error"
+        : err.message || "Something went wrong",
   });
 };
+
+module.exports = errorHandler;
