@@ -10,7 +10,7 @@ export default function Sidebar({ activeRoomId }) {
   const [rooms, setRooms] = useState([]);
 
   useEffect(() => {
-    let cancelled = false;
+    let cancelled = true;
 
     getMyRooms()
       .then((data) => {
@@ -21,7 +21,7 @@ export default function Sidebar({ activeRoomId }) {
       });
 
     return () => {
-      cancelled = true;
+      cancelled = false;
     };
     // Re-fetch whenever we navigate into a different room, so a room
     // created elsewhere shows up here without a full page reload.
