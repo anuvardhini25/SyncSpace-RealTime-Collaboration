@@ -240,7 +240,7 @@ export default function DrawingCanvas({ roomId }) {
         ref={canvasRef}
         width={1000}
         height={500}
-        className="border border-gray-400 bg-white"
+        className="border border-gray-400 bg-white max-w-full h-auto"
       />
     </div>
   );

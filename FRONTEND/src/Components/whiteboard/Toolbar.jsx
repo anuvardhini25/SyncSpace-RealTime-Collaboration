@@ -9,7 +9,7 @@ export default function Toolbar({
   connected,
 }) {
   return (
-    <div className="flex items-center gap-3 p-3 bg-gray-200 border-b">
+    <div className="flex items-center gap-3 p-3 bg-gray-200 border-b shadow-sm flex-wrap">
 
       <span
         className={`flex items-center gap-1.5 text-xs font-medium px-2 py-1 rounded ${
@@ -26,14 +26,13 @@ export default function Toolbar({
     console.log("Pencil selected");
     setTool("pencil");
   }}
-  className="px-3 py-1 bg-blue-500 text-white rounded"
+  className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
 >
   ✏ Pencil
 </button>
-
       <button
         onClick={() => setTool("eraser")}
-        className="px-3 py-1 bg-red-500 text-white rounded"
+        className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition"
       >
         🧽 Eraser
       </button>
