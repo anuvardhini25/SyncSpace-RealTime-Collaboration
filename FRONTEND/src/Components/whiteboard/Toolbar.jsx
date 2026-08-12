@@ -26,6 +26,7 @@ export default function Toolbar({
     console.log("Pencil selected");
     setTool("pencil");
   }}
+  title="Draw with pencil"
   className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
 >
   ✏ Pencil
