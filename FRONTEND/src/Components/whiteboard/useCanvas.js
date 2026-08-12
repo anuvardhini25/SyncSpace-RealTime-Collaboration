@@ -33,12 +33,13 @@ export default function useCanvas(
     let points = [];
 
     const start = (e) => {
+      if (e.button !==0) return;
       drawing = true;
       strokeId = generateStrokeId();
 
       // Text Tool
       if (tool === "text") {
-        const text = prompt("Enter Text");
+        const text = prompt("Enter Text")?.trim();
         drawing = false;
 
         if (text) {

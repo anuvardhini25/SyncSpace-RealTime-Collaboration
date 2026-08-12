@@ -23,7 +23,7 @@ export function drawSegment(ctx, { tool, color, brushSize, x1, y1, x2, y2 }) {
   ctx.stroke();
 }
 
-// Draws a finished shape (rectangle / circle / line).
+// Draws a finished shape (rectangle / circle / line shapes on the canvas).
 export function drawShape(ctx, { tool, color, brushSize, startX, startY, endX, endY }) {
   applyStrokeStyle(ctx, { tool, color, brushSize });
 

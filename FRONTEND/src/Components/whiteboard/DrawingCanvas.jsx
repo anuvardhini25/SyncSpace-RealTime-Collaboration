@@ -224,7 +224,7 @@ export default function DrawingCanvas({ roomId }) {
   };
 
   return (
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full flex flex-col items-center justify-center">
       <Toolbar
         setTool={setTool}
         setColor={setColor}
