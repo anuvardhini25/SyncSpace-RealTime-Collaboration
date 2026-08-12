@@ -39,7 +39,7 @@ export default function useCanvas(
 
       // Text Tool
       if (tool === "text") {
-        const text = prompt("Enter Text");
+        const text = prompt("Enter Text")?.trim();
         drawing = false;
 
         if (text) {
