@@ -33,6 +33,7 @@ export default function useCanvas(
     let points = [];
 
     const start = (e) => {
+      if (e.button !==0) return;
       drawing = true;
       strokeId = generateStrokeId();
 
