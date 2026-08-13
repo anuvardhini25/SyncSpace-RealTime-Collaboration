@@ -42,6 +42,7 @@ export default function Toolbar({
       <input
         type="color"
         defaultValue="#000000"
+        title="Choose drawing color"
         onChange={(e) => setColor(e.target.value)}
       />
 
@@ -50,6 +51,7 @@ export default function Toolbar({
         min="1"
         max="20"
         defaultValue="3"
+        title="Adjust brush size"
         onChange={(e) => setBrushSize(Number(e.target.value))}
       />
 
