@@ -25,6 +25,7 @@ export default function useCanvas(
     if (!canvas) return;
 
     const ctx = canvas.getContext("2d");
+    canvas.style.cursor = "crosshair";
 
     let drawing = false;
     let startX = 0;

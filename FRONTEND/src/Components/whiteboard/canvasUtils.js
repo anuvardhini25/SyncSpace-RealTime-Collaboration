@@ -52,7 +52,8 @@ export function drawShape(ctx, { tool, color, brushSize, startX, startY, endX, e
 
 export function drawText(ctx, { color, brushSize, x, y, text }) {
   ctx.fillStyle = color;
-  ctx.font = `${brushSize * 8}px Arial`;
+  ctx.font = `${Math.max(12, brushSize * 8)}px Arial`;
+  ctx.textBaseline = "top";
   ctx.fillText(text, x, y);
 }
 
