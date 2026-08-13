@@ -55,6 +55,7 @@ export default function Toolbar({
 
       <button
         onClick={clearCanvas}
+        title="Clear whiteboard"
         className="px-3 py-1 bg-green-500 text-white rounded"
       >
         🗑 Clear
@@ -62,6 +63,7 @@ export default function Toolbar({
 
       <button
   onClick={undo}
+  title="Undo last action"
   className="px-3 py-1 bg-yellow-500 text-white rounded"
 >
   ↩ Undo
@@ -69,6 +71,7 @@ export default function Toolbar({
 
 <button
   onClick={redo}
+  title="Redo last action"
   className="px-3 py-1 bg-indigo-500 text-white rounded"
 >
   ↪ Redo
@@ -107,6 +110,7 @@ export default function Toolbar({
 
 <button
   onClick={downloadCanvas}
+  title="Download whiteboard as image"
   className="px-3 py-1 bg-cyan-600 text-white rounded"
 >
   📥 Download
