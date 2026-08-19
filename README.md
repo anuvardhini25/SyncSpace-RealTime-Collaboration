@@ -288,32 +288,6 @@ A round of polish focused on making the product feel complete end-to-end, withou
 
 ![SyncSpace Guide](docs/screenshots/guide.png)
 
----
-
-### 📁 Recommended Screenshot Folder
-
-Create this structure inside your project:
-
-```text
-SyncSpace-RealTime-Collaboration/
-│
-├── BACKEND/
-├── FRONTEND/
-├── docs/
-│   └── screenshots/
-│       ├── dashboard.png
-│       ├── login.png
-│       ├── room.png
-│       ├── whiteboard.png
-│       ├── code-editor.png
-│       ├── collaboration.png
-│       └── guide.png
-│
-├── .gitignore
-└── README.md
-```
-
-Then GitHub will automatically render the screenshots in the README.
 
 ---
 
