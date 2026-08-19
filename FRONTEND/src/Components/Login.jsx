@@ -86,7 +86,7 @@ export default function Login() {
             </div>
 
             {/* Login Card */}
-            <div className="bg-white rounded-3xl border border-slate-200 shadow-xl shadow-slate-200/60 px-7 sm:px-10 py-10">
+            <div className="bg-white color-black rounded-3xl border border-slate-200 shadow-xl shadow-slate-200/60 px-7 sm:px-10 py-10">
 
               {/* Heading */}
               <div className="text-center mb-8">
