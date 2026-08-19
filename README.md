@@ -248,45 +248,51 @@ A round of polish focused on making the product feel complete end-to-end, withou
 
 > **Add your actual SyncSpace screenshots to `docs/screenshots/` and use the filenames below.**
 
-## 🏠 Dashboard
+## Dashboard
 
-![SyncSpace Dashboard](docs/screenshots/dashboard.png)
-
----
-
-## 🎨 Collaborative Whiteboard
-
-![SyncSpace Whiteboard](docs/screenshots/whiteboard.png)
+![SyncSpace Dashboard](docs/screenshots/dashboard.jpeg)
 
 ---
 
-## 💻 Collaborative Code Editor & Run Console
+## Signup Page
+
+![Signup Page](docs/screenshots/signup.png)
+
+---
+
+##  Collaborative Code Editor & Run Console
 
 ![SyncSpace Code Editor](docs/screenshots/code-editor.png)
 
 ---
 
-## 👥 Real-Time Collaboration
+## Replay Mode
 
-![Real-Time Collaboration](docs/screenshots/collaboration.png)
+![Real-Time Collaboration](docs/screenshots/replay-mode.png)
 
 ---
 
-## 🔐 Login / Authentication
+## Login / Authentication
 
 ![SyncSpace Login](docs/screenshots/login.png)
 
 ---
 
-## 🏠 Collaborative Room
+##  Collaborative Room
 
 ![SyncSpace Room](docs/screenshots/room.png)
 
 ---
 
-## ✨ AI Guide & Command Palette
+##  AI Guide & Command Palette
 
 ![SyncSpace Guide](docs/screenshots/guide.png)
+
+---
+
+##  Reactions
+
+![Reactions](docs/screenshots/reactions.png)
 
 
 ---
