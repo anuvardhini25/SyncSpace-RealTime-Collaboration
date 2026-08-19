@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Tailwind v4 defaults the `dark:` variant to the OS-level
+   prefers-color-scheme media query. SyncSpace instead lets the user
+   toggle a theme (persisted in localStorage via ThemeContext), which
+   is implemented by adding/removing a `dark` class on <html>. This
+   line switches `dark:` to match that class instead of the media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  color-scheme: light;
+}
+
+* {
+  scrollbar-width: thin;
+}
